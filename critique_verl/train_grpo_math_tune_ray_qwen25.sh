@@ -192,7 +192,6 @@ ray job submit --address=${HEAD_IP}:${HEAD_PORT} \
   actor_rollout_ref.actor.kl_loss_type=$KL_LOSS_TYPE \
   actor_rollout_ref.model.enable_gradient_checkpointing=True \
   actor_rollout_ref.actor.fsdp_config.param_offload=False \
-  actor_rollout_ref.actor.fsdp_config.grad_offload=False \
   actor_rollout_ref.actor.fsdp_config.optimizer_offload=False \
   actor_rollout_ref.rollout.temperature=$TEMPERATURE \
   actor_rollout_ref.rollout.log_prob_micro_batch_size=$LOG_PROB_MICRO_BATCH_SIZE \
