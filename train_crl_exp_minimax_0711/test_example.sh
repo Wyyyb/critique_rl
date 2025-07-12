@@ -1,7 +1,7 @@
 
 
-gsm8k_train_path=~/data/gsm8k/train.parquet
-gsm8k_test_path=~/data/gsm8k/test.parquet
+gsm8k_train_path=/data/minimax-dialogue/feishan/critique_rl/verl_data/example_data/train.parquet
+gsm8k_test_path=/data/minimax-dialogue/feishan/critique_rl/verl_data/example_data/test.parquet
 
 train_files="['$gsm8k_train_path']"
 test_files="['$gsm8k_test_path']"
