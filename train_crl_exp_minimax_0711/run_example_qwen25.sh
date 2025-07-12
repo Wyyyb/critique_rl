@@ -2,6 +2,7 @@
 cd /data/minimax-dialogue/feishan/critique_rl/critique_verl
 
 PYTHONUNBUFFERED=1 python3 -m verl.trainer.main_ppo \
+ algorithm.adv_estimator=grpo \
  data.train_files=/data/minimax-dialogue/feishan/critique_rl/verl_data/training_data/deepscaler_train_filter/train.parquet \
  data.val_files=/data/minimax-dialogue/feishan/critique_rl/verl_data/training_data/deepscaler_train_filter/test.parquet \
  data.train_batch_size=256 \
