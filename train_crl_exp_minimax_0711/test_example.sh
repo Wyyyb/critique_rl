@@ -6,6 +6,8 @@ gsm8k_test_path=~/data/gsm8k/test.parquet
 train_files="['$gsm8k_train_path']"
 test_files="['$gsm8k_test_path']"
 
+cd /data/minimax-dialogue/feishan/critique_rl/critique_verl
+
 python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
     data.train_files="$train_files" \
