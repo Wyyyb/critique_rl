@@ -1,10 +1,7 @@
-set -x
 
 
-#gsm8k_train_path=/data/minimax-dialogue/feishan/critique_rl/verl_data/training_data/deepscaler_train_filter/train.parquet
-#gsm8k_test_path=/data/minimax-dialogue/feishan/critique_rl/verl_data/training_data/deepscaler_train_filter/test.parquet
-math_train_path=/data/minimax-dialogue/feishan/critique_rl/verl_data/training_data/deepscaler_critique_formatted/train.parquet
-math_test_path=/data/minimax-dialogue/feishan/critique_rl/verl_data/training_data/deepscaler_critique_formatted/test.parquet
+gsm8k_train_path=~/data/gsm8k/train.parquet
+gsm8k_test_path=~/data/gsm8k/test.parquet
 
 train_files="['$gsm8k_train_path']"
 test_files="['$gsm8k_test_path']"
