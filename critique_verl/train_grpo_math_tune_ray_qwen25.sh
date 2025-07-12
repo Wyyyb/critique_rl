@@ -201,7 +201,6 @@ ray job submit --address=${HEAD_IP}:${HEAD_PORT} \
   actor_rollout_ref.rollout.n=$ROLLOUT_N \
   actor_rollout_ref.rollout.enable_chunked_prefill=False \
   actor_rollout_ref.rollout.max_num_batched_tokens=$max_num_batched_tokens \
-  actor_rollout_ref.rollout.micro_rollout_batch_size=$MICRO_ROLLOUT_BATCH_SIZE \
   actor_rollout_ref.ref.log_prob_micro_batch_size=$LOG_PROB_MICRO_BATCH_SIZE \
   actor_rollout_ref.ref.fsdp_config.param_offload=True \
   algorithm.kl_ctrl.kl_coef=$KL_COEF \
