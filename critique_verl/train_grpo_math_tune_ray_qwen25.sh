@@ -208,7 +208,6 @@ ray job submit --address=${HEAD_IP}:${HEAD_PORT} \
   trainer.critic_warmup=0 \
   trainer.logger=['console'] \
   trainer.project_name=$PROJECT_NAME \
-  trainer.remove_previous_ckpt=$REMOVE_PREVIOUS_CKPT \
   trainer.experiment_name=$RUN_NAME \
   trainer.n_gpus_per_node=8 \
   trainer.nnodes=$ARNOLD_WORKER_NUM \
