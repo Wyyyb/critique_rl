@@ -1,19 +1,7 @@
 
 cd /data/minimax-dialogue/feishan/critique_rl/critique_verl
 
-export HEAD_IP=0.0.0.0
-export HEAD_PORT=6379
-
-ray job submit --address=${HEAD_IP}:${HEAD_PORT} \
- --entrypoint-num-cpus=1 \
- --runtime-env-json='{
-        "working_dir": "'${WORKING_DIR}'",
-        "env_vars": {
-          "http_proxy": "",
-          "https_proxy": ""
-        }
-   }' \
- -- python -m verl.trainer.main_ppo \
+python -m verl.trainer.main_ppo \
  algorithm.adv_estimator=grpo \
  data.train_files=/data/minimax-dialogue/feishan/critique_rl/verl_data/training_data/deepscaler_train_filter/train.parquet \
  data.val_files=/data/minimax-dialogue/feishan/critique_rl/verl_data/training_data/deepscaler_train_filter/test.parquet \
